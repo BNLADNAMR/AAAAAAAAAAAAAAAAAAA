@@ -5,11 +5,22 @@
   "private": true,
   "engines": {
     "node": ">=20.0.0"
-  },
+ {
   "scripts": {
-    "build": "webpack --mode production",
-    "dev": "webpack --mode development --watch"
+    "dev": "remix vite:dev",
+    "build": "remix vite:build",
+    "start": "remix-serve build"
   },
+  "dependencies": {
+    "@remix-run/node": "^2.0.0",
+    "@remix-run/react": "^2.0.0",
+    "@remix-run/serve": "^2.0.0"
+  },
+  "devDependencies": {
+    "remix": "latest"
+  }
+}
+
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
